@@ -15,3 +15,11 @@
 > dotnet ef database update --context AppIdentityDbContext
 
 > dotnet ef database drop --force --context AppIdentityDbContext
+
+### Publish ASP.NET Core application
+> dotnet publish -c Release
+
+## Build docker containers and Run its
+> docker-compose build
+
+> docker-compose up
