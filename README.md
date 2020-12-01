@@ -5,3 +5,13 @@
 > dotnet ef database drop --force --context StoreDbContext
 
 > dotnet ef database update --context StoreDbContext
+
+### Add Identity EntityFrameworkCore package to do Authentication & Authorization
+> dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore --version 3.1.0
+
+### Creating and Applying the Database Migration for Identity
+> dotnet ef migrations add Initial --context AppIdentityDbContext
+
+> dotnet ef database update --context AppIdentityDbContext
+
+> dotnet ef database drop --force --context AppIdentityDbContext
